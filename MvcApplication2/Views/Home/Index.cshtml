@@ -11,11 +11,11 @@
     <div id="partialMapa" style="display:normal">
         @Html.Partial("_Mapa")
     </div>
-    <div id="partialevent" style="display:none">
-        @Html.Partial("_Evento")
+    <div id="partialcontacto" style="display:none">
+        @Html.Partial("_contacto")
     </div>
-    <div id="partialevent" style="display:none">
-        @Html.Partial("_Evento")
+    <div id="partialhistorias" style="display:none">
+        @Html.Partial("_historias")
     </div>
      <div id="dondeir" style="display:none">
         @Html.Partial("_DondeIr")
@@ -43,6 +43,8 @@
         $("#partialevent").attr("style", "display:normal");
         $("#login").attr("style", "display: none");
         $("#dondeir").attr("style", "display:none");
+        $("#partialhistorias").attr("style", "display:none");
+        $("#partialcontacto").attr("style", "display:none");
     });
     $('#mapaNav').bind('click', function () {
         $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
@@ -54,6 +56,8 @@
         $("#partialMapa").attr("style", "display:normal");
         $("#login").attr("style", "display: none");
         $("#dondeir").attr("style", "display:none");
+        $("#partialhistorias").attr("style", "display:none");
+        $("#partialcontacto").attr("style", "display:none");
 
     });
     $('#dondeIrNav').bind('click', function () {
@@ -66,6 +70,34 @@
         $("#partialevent").attr("style", "display:none");
         $("#login").attr("style", "display: none");
         $("#dondeir").attr("style", "display:normal");
+        $("#partialhistorias").attr("style", "display:none");
+        $("#partialcontacto").attr("style", "display:none");
+    });
+    $('#historiasNav').bind('click', function () {
+        $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#mapaNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#historiasNav').attr("class", "nav-link js-scroll-trigger  text-warning  ");
+        $('#dondeIrNav').attr("class", "nav-link js-scroll-trigger");
+        $('#contactoNav').attr("class", "nav-link js-scroll-trigger ");
+        $("#partialMapa").attr("style", "display:none");
+        $("#partialevent").attr("style", "display:none");
+        $("#login").attr("style", "display: none");
+        $("#dondeir").attr("style", "display:none");
+        $("#partialhistorias").attr("style", "display:normal");
+        $("#partialcontacto").attr("style", "display:none");
+    });
+    $('#contactoNav').bind('click', function () {
+        $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#mapaNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#historiasNav').attr("class", "nav-link js-scroll-trigger   ");
+        $('#dondeIrNav').attr("class", "nav-link js-scroll-trigger");
+        $('#contactoNav').attr("class", "nav-link js-scroll-trigger text-warning  ");
+        $("#partialMapa").attr("style", "display:none");
+        $("#partialevent").attr("style", "display:none");
+        $("#login").attr("style", "display: none");
+        $("#dondeir").attr("style", "display:none");
+        $("#partialhistorias").attr("style", "display:none");
+        $("#partialcontacto").attr("style", "display:normal");
     });
 
 
