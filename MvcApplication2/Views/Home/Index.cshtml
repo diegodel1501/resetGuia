@@ -20,6 +20,9 @@
     <div id="partialevent" style="display:none">
         @Html.Partial("_Evento")
     </div>
+     <div id="dondeir" style="display:none">
+        @Html.Partial("_DondeIr")
+    </div>
  
 
 
@@ -42,6 +45,7 @@
         $("#partialMapa").attr("style", "display:none");
         $("#partialevent").attr("style", "display:normal");
         $("#login").attr("style", "display: none");
+        $("#dondeir").attr("style", "display:none");
     });
     $('#mapaNav').bind('click', function () {
         $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
