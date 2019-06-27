@@ -1,0 +1,14 @@
+
+*.suo
+
+*.dll
+
+*.pdb
+
+*.csproj
+
+*.user
+
+*.cache
+
+*.txt

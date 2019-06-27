@@ -1,0 +1,60 @@
+﻿@{Layout = "../Layout.cshtml";}
+
+
+
+
+
+<div id="index">
+    <div id="partialevent" style="display:none">
+        @Html.Partial("_Evento")
+    </div>
+    <div id="partialMapa" style="display:normal">
+        @Html.Partial("_Mapa")
+    </div>
+    <div id="partialevent" style="display:none">
+        @Html.Partial("_Evento")
+    </div>
+    <div id="partialevent" style="display:none">
+        @Html.Partial("_Evento")
+    </div>
+    <div id="partialevent" style="display:none">
+        @Html.Partial("_Evento")
+    </div>
+ 
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+    $('#eventosNav').bind('click', function () {
+        $('#eventosNav').attr("class", "nav-link js-scroll-trigger text-warning ");
+        $('#mapaNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#historiasNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#dondeIrNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#contactoNav').attr("class", "nav-link js-scroll-trigger ");
+        $("#partialMapa").attr("style", "display:none");
+        $("#partialevent").attr("style", "display:normal");
+        $("#login").attr("style", "display: none");
+    });
+    $('#mapaNav').bind('click', function () {
+        $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#mapaNav').attr("class", "nav-link js-scroll-trigger text-warning  ");
+        $('#historiasNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#dondeIrNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#contactoNav').attr("class", "nav-link js-scroll-trigger ");
+        $("#partialevent").attr("style", "display:none");
+        $("#partialMapa").attr("style", "display:normal");
+        $("#login").attr("style", "display: none");
+
+
+    });
+
+
+</script>
