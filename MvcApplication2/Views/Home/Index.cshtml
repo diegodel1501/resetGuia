@@ -17,9 +17,6 @@
     <div id="partialevent" style="display:none">
         @Html.Partial("_Evento")
     </div>
-    <div id="partialevent" style="display:none">
-        @Html.Partial("_Evento")
-    </div>
      <div id="dondeir" style="display:none">
         @Html.Partial("_DondeIr")
     </div>
@@ -56,8 +53,19 @@
         $("#partialevent").attr("style", "display:none");
         $("#partialMapa").attr("style", "display:normal");
         $("#login").attr("style", "display: none");
+        $("#dondeir").attr("style", "display:none");
 
-
+    });
+    $('#dondeIrNav').bind('click', function () {
+        $('#eventosNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#mapaNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#historiasNav').attr("class", "nav-link js-scroll-trigger ");
+        $('#dondeIrNav').attr("class", "nav-link js-scroll-trigger text-warning ");
+        $('#contactoNav').attr("class", "nav-link js-scroll-trigger ");
+        $("#partialMapa").attr("style", "display:none");
+        $("#partialevent").attr("style", "display:none");
+        $("#login").attr("style", "display: none");
+        $("#dondeir").attr("style", "display:normal");
     });
 
 
